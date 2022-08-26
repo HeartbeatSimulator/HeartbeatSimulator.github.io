@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beating Heart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="init()">
+    <svg viewbox="0 0 30 30">
+        <path class="heart">
+            <animate attributeName="d" values="
+            M 6,12 A 1,1 0,0,1 15,9 1,1 0,0,1 24,12 C 23,16 18,18 15,23 12,18 7,16 6,12 z;
+            M 5,12 A 1,1 0,0,1 15,9 1,1 0,0,1 25,12 C 23,16 20,18 15,23 10,18 6,16 5,12 z;
+            M 6,12 A 1,1 0,0,1 15,9 1,1 0,0,1 24,12 C 23,16 18,18 15,23 12,18 7,16 6,12 z"
+            dur="0.75" repeatCount="indefinite" calcMode="spline" keySplines="0 0 0 1;0 0 0 0"/>
+            <animate attributeName="fill" values="firebrick;crimson;firebrick" dur="0.75" repeatCount="indefinite" calcMode="spline" keySplines="0 0 0 1;0 0 0 0" />
+            <animate attributeName="stroke" values="darkred;firebrick;darkred" dur="0.75" repeatCount="indefinite" calcMode="spline" keySplines="0 0 0 1;0 0 0 0" />
+        </path>
+    </svg>
+</body>
+</html>
