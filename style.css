@@ -8,10 +8,19 @@ body {
 }
 
 svg {
+	position: fixed;
 	width: 50vmin;
 	height: 50vmin;
 }
 
-.heart {
-	stroke: darkred;
+form {
+	position: fixed;
+	bottom: 15vmin;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+output {
+	font-size: xx-large;
 }
