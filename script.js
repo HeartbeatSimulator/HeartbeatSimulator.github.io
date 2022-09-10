@@ -5,7 +5,7 @@ var bpm;
 
 
 function init() {
-	animations = document.getElementById("heart").querySelectorAll("animate");
+	animations = document.getElementById("heartsvg").querySelectorAll("animate");
 	slider = document.getElementById("slider");
 	bpm = document.getElementById("bpm");
 	heartrate = slider.value;

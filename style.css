@@ -23,5 +23,10 @@ figcaption {
 }
 
 #heart {
+	width: 50vmin;
 	height: 50vmin;
+}
+
+#ecg {
+	width: 100%;
 }
