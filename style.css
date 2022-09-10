@@ -28,5 +28,6 @@ figcaption {
 }
 
 #ecg {
+	position: fixed;
 	width: 100%;
 }
