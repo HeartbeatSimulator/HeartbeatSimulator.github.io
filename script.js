@@ -1,8 +1,21 @@
-var heartrate = 80;
+var animations;
+var heartrate;
+var slider;
+var bpm;
+
 
 function init() {
-	heartrate = 60 / document.getElementById("heartbeat").getAttribute("dur");
+	animations = document.getElementById("heart").querySelectorAll("animate");
+	slider = document.getElementById("slider");
+	bpm = document.getElementById("bpm");
+	heartrate = slider.value;
 	console.log(getBPM());
+	slider.oninput = () => {
+		bpm.textContent = slider.value;
+		for (let animation of animations) {
+			animation.setAttribute("dur", 60 / slider.value);
+		}
+	};
 }
 
 function getBPM() {

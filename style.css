@@ -1,26 +1,27 @@
-body {
-	background: linear-gradient(.6turn, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(.35turn, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(.93turn, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+* {
 	margin: 0;
+	color: white;
+}
+
+body {
+	background-color: black;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
 }
 
-svg {
+figure {
 	position: fixed;
-	width: 50vmin;
-	height: 50vmin;
-}
-
-form {
-	position: fixed;
-	bottom: 15vmin;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	flex-direction: column;
 }
 
-output {
+figcaption {
 	font-size: xx-large;
+}
+
+#heart {
+	height: 50vmin;
 }
