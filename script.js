@@ -4,20 +4,14 @@ var slider;
 var bpm;
 
 
-function init() {
+window.onload = () => {
 	animations = document.getElementById("heartsvg").querySelectorAll("animate");
 	slider = document.getElementById("slider");
 	bpm = document.getElementById("bpm");
 	heartrate = slider.value;
-	console.log(getBPM());
-	slider.oninput = () => {
-		bpm.textContent = slider.value;
-		for (let animation of animations) {
-			animation.setAttribute("dur", 60 / slider.value);
-		}
+	console.log(heartrate);
+	slider.oninput = () => bpm.textContent = slider.value; 
+	animations[0].onrepeat = () => { 
+		for (var animation of animations) animation.setAttribute("dur", 60 / slider.value);
 	};
-}
-
-function getBPM() {
-	return `The heart is currently pumping at ${heartrate} beats per minute!`;
-}
+};
